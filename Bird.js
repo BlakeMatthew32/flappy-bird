@@ -14,7 +14,7 @@ class Bird {
 
     show() {
         fill(255)
-        ellipse(this.x, this.y + this.velY, this.size)
+        ellipse(this.x, this.y, this.size)
     }
 
     update() {
