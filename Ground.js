@@ -10,9 +10,9 @@ class Ground {
         rect(0, this.topPixalCoord, canvas.width, this.height)
     }
 
-    // collided(b) {
-    //     if(b.y + b.size >= this.topPixalCoord) {
-    //         return true
-    //     }
-    // }
+    collided(b) {
+        if(b.y + b.size/1.8 >= this.topPixalCoord) {
+            return true
+        }
+    }
 }
