@@ -5,7 +5,7 @@ class Bird {
         this.velX = scrollSpeed
         this.velY = 0
         this.maxVelY = 6
-        this.flapHeight = 20
+        this.flapHeight = -15
         this.size = 40
         this.dead = false
         this.onGround = false
@@ -41,9 +41,8 @@ class Bird {
     }
 
     flap() {
-        this.velY -= this.flapHeight 
-        if (!this.onGround) {
-        }
+        this.velY = this.flapHeight 
+        console.log(this.velY)
     }
 
     checkCollision() {
